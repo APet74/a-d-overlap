@@ -1,9 +1,16 @@
-<button onclick="clearFnc()">Clear</button>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="info"></div>
+    <button onclick="clearFnc()">Clear</button>
+    <div id="app"></div>
+    <canvas id="line-chart" width="800" height="450"></canvas>
 
-<div id="app"></div>
-<script>
-  function clearFnc() {
-    document.getElementById('app').innerHTML = '';
-  }
-</script>
-<script src="index.js"></script>
+    <script>
+      function clearFnc() {
+        document.getElementById('app').innerHTML = '';
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
