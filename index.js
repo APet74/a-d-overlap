@@ -28,9 +28,12 @@ addEventListener('keydown', (event) => {
 
   if (event.key === 'Shift') {
     document.getElementById('app').innerHTML = '';
+    document.getElementById('line-chart').style = 'display: none;';
   }
 
   if (event.key === ' ') {
+    document.getElementById('line-chart').style = 'display: none;';
+
     showKey = true;
     document.getElementById('app').innerHTML =
       '<span style="color: purple"><b>Starting Jump</b></span><br>';
@@ -40,6 +43,8 @@ addEventListener('keydown', (event) => {
   }
 
   if (event.key === 'Control') {
+    document.getElementById('line-chart').style = 'display: block;';
+
     document.getElementById('app').innerHTML +=
       '<span style="color: purple"><b>Stopped Jump</b></span><br>';
     showKey = false;
