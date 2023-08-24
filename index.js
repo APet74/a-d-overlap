@@ -74,7 +74,6 @@ function tellPos(p) {
 }
 addEventListener('mousemove', tellPos, false);
 
-import Chart from 'chart.js';
 function RenderChart() {
   new Chart(document.getElementById('line-chart'), {
     type: 'scatter',
